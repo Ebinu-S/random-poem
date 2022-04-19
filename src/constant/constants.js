@@ -131,7 +131,3 @@ const authors = [
 ]
 
 export default authors;
-
-export function getRandomAuthor () {
-    return authors[Math.round(Math.random() * authors.length)];
-}

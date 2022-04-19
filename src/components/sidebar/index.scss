@@ -1,0 +1,51 @@
+.sidebar__container{
+    width: 20vw;
+    height: 100vh;
+    background-color: #fff; // change this color
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    // add box shadow
+}
+
+.sidebar__closebtn{
+    position: absolute;
+    left: 15.5vw;
+    top: 1rem;
+    color: var(--primary) !important;
+}
+
+.sidebar__buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.sidebar__button p{
+    margin: 0;
+    width: 9vw;
+}
+
+.sidebar__button svg{
+    width: 6vw;
+}
+
+.sidebar{
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+}
+
+.sidebar__fill{
+    button{
+        width: 100%;
+        height: 100vh;
+    }
+}

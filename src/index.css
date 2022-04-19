@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 :root{
   
@@ -14,8 +14,23 @@
 
 body{
   background-color: var(--primary);
-  font-family: 'Balsamiq Sans', cursive;
+  font-family:  'Oxygen', sans-serif;
   color: var(--textLight);
   margin: 0;
   height: 100vh;
+  overflow: hidden;
+}
+
+.mb-0{
+  margin-bottom: 0 !important;
+}
+
+button{
+  background: transparent;
+  border: 0;
+  color: var(--textLight) !important;
+}
+
+.text-center{
+  text-align: center;
 }

@@ -1,0 +1,35 @@
+.poem{
+    height: 93vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+}
+
+.poem__container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50vw;
+    padding: 1rem;
+}
+
+.poem__author, .poem__title{
+    text-align: center;
+}
+
+.poem__lines{
+    height: 80vh;
+    width: 40vw;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+.poem__savebutton{
+    position: absolute !important;
+    font-size: 2rem;
+    color: var(--textLight);
+    right: -3rem;
+    top: 3rem;
+}

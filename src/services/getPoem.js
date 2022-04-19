@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {getRandomAuthor} from '../utils/authors';
+import {getRandomAuthor} from '../services/authors';
 
 export async function getRandomPoem() {
 
@@ -29,3 +29,31 @@ export async function getRandomPoem() {
     return poem;
 
 };
+
+export async function getPoemByTitle(title) {
+
+    let poem = {};
+
+    try{
+        const res = await axios.get('https://poetrydb.org/title/' + '/' + title + '/lines.json');
+
+        if(res.data.status){
+            alert('something went wrong')
+            poem.status = 'error';
+        }
+        else {
+            poem.status = 'success';
+            poem.data = res.data[0];
+            poem.data.title = title;
+        }
+
+    }
+    catch(err) {
+        alert('error while fetching random poem.')
+        console.log(err);
+        poem.status = 'error';
+    }
+
+    return poem;
+
+}
