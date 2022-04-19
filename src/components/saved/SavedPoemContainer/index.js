@@ -23,7 +23,7 @@ function SavedPoemContainer() {
             SetPoem(temp.data);
         }
         else {
-            alert("Get Random Poem status is error");
+            alert("Get saved Poem status is error");
             // todo snackbar and error message
         }
         setLoading(false)

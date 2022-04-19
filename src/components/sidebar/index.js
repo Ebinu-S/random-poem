@@ -7,6 +7,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HomeIcon from '@mui/icons-material/Home';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
 
 function Sidebar({toggleSideBar}) {
     return (
@@ -23,6 +24,11 @@ function Sidebar({toggleSideBar}) {
                     <Button component={Link} to='/' className='sidebar__button'>
                         <p>Home</p>
                         <HomeIcon />
+                    </Button>
+
+                    <Button component={Link} to='/authors' className='sidebar__button'>
+                        <p>Authors</p>
+                        <BorderColorIcon />
                     </Button>
 
                     <Button component={Link} to='/saved' className='sidebar__button'>

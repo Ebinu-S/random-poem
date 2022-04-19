@@ -6,6 +6,7 @@
   --primary: #2A0944;
   --accent: #FEC260;
   --textLight: #fff;
+  --borderWhite: #e5e5e5;
 }
 
 *{
@@ -18,7 +19,8 @@ body{
   color: var(--textLight);
   margin: 0;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .mb-0{

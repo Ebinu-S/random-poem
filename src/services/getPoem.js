@@ -57,3 +57,30 @@ export async function getPoemByTitle(title) {
     return poem;
 
 }
+
+export async function getTitlesByAuthor(author) {
+
+    let titles = {};
+
+    try{
+        const res = await axios.get('https://poetrydb.org/author/' + author + '/title');
+
+        if(res.data.status){
+            alert('something went wrong')
+            titles.status = 'error';
+        }
+        else {
+            titles.status = 'success';
+            titles.data = res.data;
+        }
+
+    }
+    catch(err) {
+        alert('error while fetching random poem.')
+        console.log(err);
+        titles.status = 'error';
+    }
+
+    return titles;
+
+}

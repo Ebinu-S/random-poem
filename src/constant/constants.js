@@ -128,6 +128,236 @@ const authors = [
     "William Topaz McGonagall",
     "William Vaughn Moody",
     "William Wordsworth"
-]
+];
+
+
+export const authorsByAlphabet = [
+    {
+        title: 'A',
+        data: [
+            "Adam Lindsay Gordon",
+            "Alan Seeger",
+            "Alexander Pope",
+            "Algernon Charles Swinburne",
+            "Ambrose Bierce",
+            "Amy Levy",
+            "Andrew Marvell",
+            "Ann Taylor",
+            "Anne Bradstreet",
+            "Anne Bronte",
+            "Anne Killigrew",
+            "Anne Kingsmill Finch",
+            "Annie Louisa Walker",
+            "Arthur Hugh Clough",
+        ]
+    },
+    {
+        title: 'B',
+        data: [
+            "Ben Jonson",
+        ]
+    },
+    {
+        title: 'C',
+        data: [
+            "Charles Kingsley",
+            "Charles Sorley",
+            "Charlotte Bronte",
+            "Charlotte Smith",
+            "Christina Rossetti",
+            "Christopher Marlowe",
+            "Christopher Smart",
+            "Coventry Patmore",
+        ]
+    },
+    {
+        title: 'E',
+        data: [
+            "Edgar Allan Poe",
+            "Edmund Spenser",
+            "Edward Fitzgerald",
+            "Edward Lear",
+            "Edward Taylor",
+            "Edward Thomas",
+            "Eliza Cook",
+            "Elizabeth Barrett Browning",
+            "Emily Bronte",
+            "Emily Dickinson",
+            "Emma Lazarus",
+            "Ernest Dowson",
+            "Eugene Field",
+        ]
+    },
+    {
+        title: 'F',
+        data: [
+            "Francis Thompson",
+        ]
+    },
+    {
+        title: 'G',
+        data: [
+            "Geoffrey Chaucer",
+            "George Eliot",
+            "George Gordon, Lord Byron",
+            "George Herbert",
+            "George Meredith",
+            "Gerard Manley Hopkins",
+        ]
+    },
+    {
+        title: 'H',
+        data: [
+            "Helen Hunt Jackson",
+            "Henry David Thoreau",
+            "Henry Vaughan",
+            "Henry Wadsworth Longfellow",
+            "Hugh Henry Brackenridge",
+        ]
+    },
+    {
+        title: 'I',
+        data: [
+            "Isaac Watts",
+        ]
+    },
+    {
+        title: 'J',
+        data: [
+            "James Henry Leigh Hunt",
+            "James Thomson",
+            "James Whitcomb Riley",
+            "Jane Austen",
+            "Jane Taylor",
+            "John Clare",
+            "John Donne",
+            "John Dryden",
+            "John Greenleaf Whittier",
+            "John Keats",
+            "John McCrae",
+            "John Milton",
+            "John Trumbull",
+            "John Wilmot",
+            "Jonathan Swift",
+            "Joseph Warton",
+            "Joyce Kilmer",
+            "Julia Ward Howe",
+            "Jupiter Hammon",
+        ]
+    },
+    {
+        title: 'K',
+        data: [
+            "Katherine Philips",
+        ]
+    },
+    {
+        title: 'K',
+        data: [
+            "Katherine Philips",
+        ]
+    },
+    {
+        title: 'L',
+        data: [
+            "Lady Mary Chudleigh",
+            "Lewis Carroll",
+            "Lord Alfred Tennyson",
+            "Louisa May Alcott",
+        ]
+    },
+    {
+        title: 'M',
+        data: [
+            "Major Henry Livingston, Jr.",
+            "Mark Twain",
+            "Mary Elizabeth Coleridge",
+            "Matthew Arnold",
+            "Matthew Prior",
+            "Michael Drayton",
+        ]
+    },
+    {
+        title: 'O',
+        data: [
+            "Oliver Goldsmith",
+            "Oliver Wendell Holmes",
+            "Oscar Wilde",
+        ]
+    },
+    {
+        title: 'P',
+        data: [
+            "Paul Laurence Dunbar",
+            "Percy Bysshe Shelley",
+            "Philip Freneau",
+            "Phillis Wheatley",
+        ]
+    },
+    {
+        title: 'R',
+        data: [
+            "Ralph Waldo Emerson",
+            "Richard Crashaw",
+            "Richard Lovelace",
+            "Robert Browning",
+            "Robert Burns",
+            "Robert Herrick",
+            "Robert Louis Stevenson",
+            "Robert Southey",
+            "Robinson",
+            "Rupert Brooke",
+        ]
+    },
+    {
+        title: 'S',
+        data: [
+            "Samuel Coleridge",
+            "Samuel Johnson",
+            "Sarah Flower Adams",
+            "Sidney Lanier",
+            "Sir John Suckling",
+            "Sir Philip Sidney",
+            "Sir Thomas Wyatt",
+            "Sir Walter Raleigh",
+            "Sir Walter Scott",
+            "Stephen Crane",
+        ]
+    },
+    {
+        title: 'T',
+        data: [
+            "Thomas Campbell",
+            "Thomas Chatterton",
+            "Thomas Flatman",
+            "Thomas Gray",
+            "Thomas Hood",
+            "Thomas Moore",
+            "Thomas Warton",
+        ]
+    },
+    {
+        title: 'W',
+        data: [
+            "Walt Whitman",
+            "Walter Savage Landor",
+            "Wilfred Owen",
+            "William Allingham",
+            "William Barnes",
+            "William Blake",
+            "William Browne",
+            "William Cowper",
+            "William Cullen Bryant",
+            "William Ernest Henley",
+            "William Lisle Bowles",
+            "William Morris",
+            "William Shakespeare",
+            "William Topaz McGonagall",
+            "William Vaughn Moody",
+            "William Wordsworth"
+        ]
+    },
+    
+] 
 
 export default authors;
