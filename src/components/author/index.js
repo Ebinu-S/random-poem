@@ -46,9 +46,9 @@ function Author() {
                             <p>Titles:</p>
                             <div className='author__lines'>
                                 {titles.map((data) => (
-                                    <Button component={Link} to={`/saved/${author}/${data.title}`} className='author__link'>
+                                    <Link to={`/saved/${author}/${data.title}`} className='author__link'>
                                         <p>{data.title}</p>
-                                    </Button>
+                                    </Link>
                                 ))}
                             </div>
                         </>

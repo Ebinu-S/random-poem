@@ -7,14 +7,23 @@ import {Button} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Sidebar from '../sidebar';
 
-function Layout() {
+function Layout({appRef}) {
 
     const [sideBarOpen, setSideBarOpen] = useState(false);
 
     const toggleSideBar = () => {
+
+        if(!sideBarOpen){
+            appRef.current.classList.add('body-noscroll');
+            console.log(appRef);
+        }
+        else{
+            appRef.current.classList.remove('body-noscroll');
+        }
         setSideBarOpen(!sideBarOpen); 
-        // log
+        
     }
+
 
     return (
         <div className='layout'>

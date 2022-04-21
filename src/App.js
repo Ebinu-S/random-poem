@@ -1,5 +1,6 @@
 import './App.scss';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { useRef } from 'react';
 
 import Home from './components/Home';
 import Layout from './components/layout';
@@ -10,12 +11,14 @@ import Authors from './components/authors';
 import Author from './components/author';
 
 function App() {
+
+  const appRef = useRef(null);
   return (
-    <div className="App">
+    <div className="App" ref={appRef}>
       <BrowserRouter>
         
         <Routes>
-          <Route path='/' element={<Layout />}>
+          <Route path='/' element={<Layout appRef={appRef}/>}>
             <Route index element={<Home />} />
             <Route path='/settings' exact element={<Settings />} />
             <Route path='/saved' exact element={<Saved />} />

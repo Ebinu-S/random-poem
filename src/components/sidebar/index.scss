@@ -49,3 +49,8 @@
         height: 100vh;
     }
 }
+
+body.sidebar{
+    height: 100vh;
+    overflow-y: hidden;
+}

@@ -23,6 +23,11 @@ body{
   scroll-behavior: smooth;
 }
 
+.body-noscroll{
+  overflow: hidden !important;
+  height: 100vh;
+}
+
 .mb-0{
   margin-bottom: 0 !important;
 }
