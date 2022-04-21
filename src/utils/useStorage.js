@@ -51,4 +51,21 @@ export function deleteAllSavedPoems () {
 
 }
 
-//todo delete poem
+export function deleteSinglePoemByTitle(title) {
+
+    const poems =  JSON.parse(localStorage.getItem('randompoem_saved'));
+    
+    const index = poems.findIndex(poem => poem.title === title);
+
+    if(index === -1 ){
+        alert('Poem does not exist in LS');
+    }
+    else{
+        poems.splice(index , 1)
+    }
+
+    localStorage.setItem('randompoem_saved', JSON.stringify(poems));
+
+    console.log(poems);
+
+}

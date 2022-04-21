@@ -2,7 +2,7 @@ import {useState} from 'react';
 import './index.scss';
 import {Button} from '@mui/material';
 
-import {savePoem} from '../../utils/useStorage';
+import {savePoem, deleteSinglePoemByTitle} from '../../utils/useStorage';
 
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
@@ -15,16 +15,22 @@ function Poem({isSavedPoem = false, loading, poem}) {
     const handleSave = () => {
         //TODO: check if already saved
 
-        savePoem(
-            poem.title,
-            poem.author
-        );
-
-        setIsSaved(true);
+        if(isSaved) {
+            //delete the poem
+            console.log('called');
+            deleteSinglePoemByTitle(poem.title);
+            setIsSaved(false);
+        }
+        else {
+            //save
+            savePoem(
+                poem.title,
+                poem.author
+            );
+            setIsSaved(true);
+        }
 
     }
-
-    console.log(poem);
 
     return (
         <div className='poem'>
