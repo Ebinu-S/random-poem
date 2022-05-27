@@ -9,6 +9,7 @@ import Saved from './components/saved';
 import SavedPoemContainer from './components/saved/SavedPoemContainer';
 import Authors from './components/authors';
 import Author from './components/author';
+import Auth from './components/authentication';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='/authors' exact element={<Authors />} />
             <Route path='/author/:author' exact element={<Author />} />
           </Route>
+          <Route path='/authenticate' exact element={<Auth />} />
         </Routes>
 
       </BrowserRouter>

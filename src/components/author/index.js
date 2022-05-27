@@ -2,7 +2,6 @@ import {useState, useEffect} from 'react';
 import './index.scss';
 import {useParams} from 'react-router-dom';
 import {getTitlesByAuthor} from '../../services/getPoem';
-import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function Author() {
@@ -36,20 +35,22 @@ function Author() {
     return (
         <div className='author'>
             <h1 className='text-center'>author</h1>
-            <h2 className='author__Hname text-center'>{author}</h2>
+            <h2 className='text-center'>{author}</h2>
 
             <div className='author__container'>
                 {
                     loading ? <p>Loading....</p> : (
                         <>
-                            <div className='author__vetiLine'></div>
                             <p>Titles:</p>
-                            <div className='author__lines'>
-                                {titles.map((data) => (
-                                    <Link to={`/saved/${author}/${data.title}`} className='author__link'>
-                                        <p>{data.title}</p>
-                                    </Link>
-                                ))}
+                            <div className='author__poems'>
+                                <div className='author__vetiLine'></div>
+                                <div className='author__lines'>
+                                    {titles.map((data) => (
+                                        <Link to={`/saved/${author}/${data.title}`} className='author__link'>
+                                            <p>{data.title}</p>
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
                         </>
                     )

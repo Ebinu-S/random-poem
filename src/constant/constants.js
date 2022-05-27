@@ -130,6 +130,7 @@ const authors = [
     "William Wordsworth"
 ];
 
+export default authors;
 
 export const authorsByAlphabet = [
     {
@@ -360,4 +361,3 @@ export const authorsByAlphabet = [
     
 ] 
 
-export default authors;

@@ -1,35 +1,67 @@
-.author__Hname{
-    background: linear-gradient(90deg, #D7E1EC 0%, rgba(255, 255, 255, 0.83) 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+.author{
+
+    h1{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        color: var(--accent);
+    }
+    
+    h2{
+        background: linear-gradient(90deg, #D7E1EC 0%, rgba(255, 255, 255, 0.83) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    }
+    
+    .author__vetiLine{
+        width: 2px;
+        height: 100%;
+        background-color: var(--accent);
+        position: absolute;
+        top: 1rem;
+        left: -2rem;
+    }
+    
+    .author__container{
+        position: relative;
+        margin: 5rem 0;
+        width: 70vw;
+        margin-left: 30vw;
+        border-radius: 2px;
+    }
+    
+    .author__lines{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 1rem;
+        
+        a{
+            text-decoration: none;
+            transition: .1s ease-in-out;
+        }
+
+        a:hover{
+            color: var(--accent);
+            transform: translateX(1rem);
+            p{
+                font-weight: 700;
+            }
+        }
+        
+        p{
+            margin-bottom: 0;
+            font-weight: lighter;
+        }
+    }
+    
+    .author__poems{
+        transform: translateX(3rem);
+    }
+    
+    .author__link{
+        color: var(--textLight);
+    }
 }
 
-.author__vetiLine{
-    width: 2px;
-    height: 100%;
-    background-color: var(--accent);
-    position: absolute;
-    top: 3rem;
-    left: -1.5rem;
-}
-
-.author__container{
-    position: relative;
-    margin-bottom: 5rem;
-    width: 70vw;
-    margin-left: 30vw;
-    border-radius: 2px;
-}
-
-.author__lines{
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.author__link{
-    color: var(--textLight);
-}

@@ -51,6 +51,7 @@ export function deleteAllSavedPoems () {
 
 }
 
+//* Delete poem by title
 export function deleteSinglePoemByTitle(title) {
 
     const poems =  JSON.parse(localStorage.getItem('randompoem_saved'));

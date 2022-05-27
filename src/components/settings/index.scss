@@ -1,0 +1,30 @@
+.settings__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.settings__card{
+    width: 35vw;
+    height: 25vh;
+    background: linear-gradient(180deg, #E9E9E9 0%, #F6F6F6 42.8%);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: var(--primary);
+    
+    h3{
+        font-weight: 900;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: end;
+
+        button{
+            background-color: var(--primary) !important;
+            text-transform: none;
+
+        }
+    }
+}

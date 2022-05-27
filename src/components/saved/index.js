@@ -12,9 +12,9 @@ function Saved() {
         
         setLoading(true);
         const temp = getAllSavedPoems();
-        if(temp === null) {
-            alert("something went wrong in /saved")
-        }
+        // if(temp === null) {
+        //     // alert("something went wrong in /saved")
+        // }
         setSaved(temp);
         setLoading(false);
         
